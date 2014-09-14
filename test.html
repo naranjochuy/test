@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<style>
+		#audio1{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio1" src="audio/beep.mp3" controls preload="auto" autobuffer>
+	</audio>
+	<form>
+		<input type="button" value="Play Sound" onClick="EvalSound('audio1')">
+	</form>
+<script>
+function EvalSound(soundobj) {
+  var thissound=document.getElementById(soundobj);
+  thissound.play();
+}
+</script>
+</body>
+</html>
