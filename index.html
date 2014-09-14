@@ -15,11 +15,12 @@
 	<form>
 		<input type="button" value="Play Sound" onClick="EvalSound('audio1')">
 	</form>
-<script>
-function EvalSound(soundobj) {
-  var thissound=document.getElementById(soundobj);
-  thissound.play();
-}
-</script>
+	<script type="text/javascript" charset="utf-8" src="js/cordova-2.0.0.js"></script>
+	<script>
+	function EvalSound(soundobj) {
+	  var thissound=document.getElementById(soundobj);
+	  thissound.play();
+	}
+	</script>
 </body>
 </html>
