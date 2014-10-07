@@ -5,21 +5,12 @@
 	<title>Document</title>
 	<script scr="phonegap-1.2.0.js"></script>
 	<script>
-		document.addEventListener("deviceready", function(){
-			var reproductor = new Media('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3', terminoReproducirse, error);
-			reproductor.play();
-		}, false);
-
-		function terminoReproducirse(){
-			alert('termino');
-		}
-
 		function error(){
 			alert('error');
 		}
 	</script>
 </head>
 <body>
-	<input type="button">
+	<input type="submit" onclick="error();">
 </body>
 </html>
