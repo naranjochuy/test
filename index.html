@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			body{
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="submit" onclick="error();">
+	</body>
+	<script scr="jquery.js"></script>
 	<script scr="phonegap-1.2.0.js"></script>
 	<script>
 		function error(){
-			alert('error');
+			$.ajax({
+			    url: "http://192.168.0.12:8000/test",
+			    context: document.body,
+			    success: function(data){
+			      alert(data);
+			    }
+			});
 		}
 	</script>
-	<style>
-		body{
-			background-color: black;
-		}
-	</style>
-</head>
-<body>
-	<input type="submit" onclick="error();">
-</body>
 </html>
