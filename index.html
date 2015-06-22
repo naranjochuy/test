@@ -6,11 +6,13 @@
   </head>
   <body>
     <input type="text" id="texto">
-    <input type="button" id="boton">
+    <input type="button" id="boton" value="OK">
   </body>
   <script>
     $( document ).ready(function() {
-      alert('test');
+      $('#boton').on('click', function(){
+        $('#texto').val('xxx');
+      });
     });
   </script>
 </html>
